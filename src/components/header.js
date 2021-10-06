@@ -5,8 +5,8 @@ import React, { useState } from "react"
 function Header({ siteTitle }) {
 
   return (
-    <nav className="flex flex-wrap items-center justify-between p- mb-0 bg-gradient-to-r from-black via-black-500 to-red-500">
-      <div className="flex items-center flex-shrink-0 mr-2 text-white">
+    <nav className=" flex flex-wrap items-center justify-between p-6 mb-0 bg-gradient-to-r from-black via-black-500 to-red-500">
+      <div className=" text-white">
           {/* <svg src="/images/pig-piggy.png"/> */}
           <Link
             to={`/`}

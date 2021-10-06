@@ -8,19 +8,15 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-      <div className="w-full relative bg-grey-1000">
-        <div className = "w-full h-full bg-grey-800 top-0 left-0">
-        <div className="w-full h-full flex flex-col absolute top-0 left-0 justify-center items-center">
-        <div className = "text-6xl font-bold text-white">Bake my bacon</div>
-        </div>
-
-      <StaticImage
+    <section className="w-full max-w-lg h-64 rounded-lg shadow-2xl overflow-hidden relative">
+      <StaticImage className="absolute"
           src="../images/poolHouse.jpg"
           alt="pool house background"
         />
+        <div className="flex h-full items-center justify-center relative">
+          <h2 className = "relative text-3xl font-bold tracking-wider text-white">BIG OINK STUDIOS</h2>
         </div>
-      </div>
-
+    </section>
     <section>
       <form className="bg-grey mg-1 solid" name="contact" method="POST" data-netlify="true">
           <p>
