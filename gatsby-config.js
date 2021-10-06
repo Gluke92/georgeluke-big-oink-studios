@@ -1,15 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Big Oink Studios`,
-    description: `Kick off your next, great Gatsby project with this default starter with TailwindCSS and common dev tools. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Bring Home The Bacon`,
     author: `@kosvrouvas`,
-  },
-  flags: {
-    THE_FLAG: false
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-react-svg',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

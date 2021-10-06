@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout className = "flex flex-wrap">
     <SEO title="Home" />
     <section className="w-full max-w-lg h-64 rounded-lg shadow-2xl overflow-hidden relative">
       <StaticImage className="absolute"
@@ -24,14 +24,14 @@ const IndexPage = () => (
         </div>
     </section>
     <section>
-      <form className="bg-grey mg-1 solid" name="contact" method="POST" data-netlify="true">
-          <p>
+      <form className="bg-grey border-blue-200 md:border-3 grid" name="contact" method="POST" data-netlify="true">
+          <p className="grid">
             <label>Your Name: <input type="text" name="name" /></label>   
           </p>
-          <p>
+          <p className="grid">
             <label>Your Email: <input type="email" name="email" /></label>
           </p>
-          <p>
+          <p className="grid-flow-row-dense">
             <label>Your Role: <select name="role[]" multiple>
               <option value="leader">Leader</option>
               <option value="follower">Follower</option>
