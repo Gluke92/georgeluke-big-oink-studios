@@ -7,8 +7,6 @@ function Header({ siteTitle }) {
 
   return (
     <nav className=" flex flex-wrap items-center justify-between p-6 mb-0 bg-gradient-to-r from-black via-black-500 to-red-500">
-      <div className=" text-white">
-          {/* <svg src="/images/pig-piggy.png"/> */}
           <StaticImage
           className = "w-5 h-5 text-center"
           src="../images/invertPiggy.png"
@@ -17,19 +15,17 @@ function Header({ siteTitle }) {
           <Link
             to={`/`}
             href="#responsive-header"
-            className="mt-4 mr-4 text-white lg:inline-block lg:mt-0 text-white"
+            className="mt-4 mr-4 text-sm items-center lg:inline-block lg:mt-0 text-white"
           >
             Big Oink Studios
           </Link>
-        </div>
-        <Link
+          <Link
             to={`/portfolio`}
             href="#responsive-header"
-            className="mt-4 mr-4 text-white lg:inline-block lg:mt-0 text-white"
+            className="mt-4 mr-4 text-xs items-center lg:inline-block lg:mt-0 text-white"
           >
             PORTFOLIO
           </Link>
-
     </nav>
   )
 }
