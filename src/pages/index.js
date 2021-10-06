@@ -13,8 +13,14 @@ const IndexPage = () => (
           src="../images/poolHouse.jpg"
           alt="pool house background"
         />
+        <div className="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
         <div className="flex h-full items-center justify-center relative">
-          <h2 className = "relative text-3xl font-bold tracking-wider text-white">BIG OINK STUDIOS</h2>
+          <StaticImage
+          className = "w-10 h-10"
+          src="../images/invertPiggy.png"
+          alt="pool house background"
+          />
+          <h2 className = "text-1xl font-bold tracking-wider text-white">BIG OINK STUDIOS</h2>
         </div>
     </section>
     <section>
